@@ -4,8 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="esercizio.css" />
   </head>
   <body>
+    <form id="petForm">
+      <input type="text" id="petName" placeholder="Nome Animale" required />
+      <input
+        type="text"
+        id="ownerName"
+        placeholder="Nome Proprietario"
+        required
+      />
+      <input
+        type="text"
+        id="species"
+        placeholder="Specie (es. Cane)"
+        required
+      />
+      <input
+        type="text"
+        id="breed"
+        placeholder="Razza (es. Labrador)"
+        required
+      />
+      <button type="submit">Aggiungi Pet</button>
+    </form>
+
+    <ul id="petList"></ul>
     <script src="esercizio1.js"></script>
   </body>
 </html>

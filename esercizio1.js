@@ -33,6 +33,20 @@ class Pet {
     this.breed = _breed
   }
   sameOwner = function (otherPet) {
-    return this.ownerName === otherPet.ownerName
-  }
+    if (this.ownerName === otherPet.ownerName) {
+      return true
+    } else {
+      return false
+    }
+ }
 }
+
+const pet1 = new Pet('Fido', 'Aldo Rossi', 'Cane', 'Labrador')
+const pet2 = new Pet('Felix', 'Aldo Rossi', 'Gatto', 'Soriano')
+const pet3 = new Pet('Bubù', 'Giovanni Verdi', 'Procione', 'Bruno')
+
+console.log(`Padrone di ${pet1.petName} è lo stesso di ${pet2.petName}?`)
+console.log(pet1.sameOwner(pet2))
+
+console.log(`Padrone di ${pet1.petName} è lo stesso di ${pet3.petName}?`)
+console.log(pet1.sameOwner(pet3))
