@@ -21,3 +21,18 @@ const z = new User('Aldo', 'Baglio', 40, 'Palermo')
 
 x.compareAge(y)
 z.compareAge(x)
+
+
+//esercizio 2
+
+class Pet {
+  constructor(_petName, _ownerName, _species, _breed) {
+    this.petName = _petName
+    this.ownerName = _ownerName
+    this.species = _species
+    this.breed = _breed
+  }
+  sameOwner = function (otherPet) {
+    return this.ownerName === otherPet.ownerName
+  }
+}
